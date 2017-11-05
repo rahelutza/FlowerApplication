@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raraflower.hackgsu.myapplication.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="160dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="380dp"
+        android:text="Number of Petals"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="223dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="420dp"
+        android:max="15"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:min="6" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+         android:background="@color/blue"
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="400dp"/>
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+          android:background="@color/red"
+
+        />
+
+    <Button
+        android:id="@+id/buttonYellow"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+          android:background="@color/yellow"
+
+        />
+
+    <Button
+        android:id="@+id/buttonGreen"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+          android:background="@color/green"
+       />
+</android.support.constraint.ConstraintLayout>
